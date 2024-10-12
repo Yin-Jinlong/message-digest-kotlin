@@ -1,0 +1,15 @@
+### IDE ###
+.vscode/
+.idea/
+
+## cache ###
+.kotlin/
+.gradle/
+
+### build ###
+build/
+
+
+### Local ###
+/local.properties
+/.m2/
