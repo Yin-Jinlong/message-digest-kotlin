@@ -1,12 +1,15 @@
 package io.github.yinjinlong.md
 
+private val CHARS = "0123456789abcdef".toCharArray()
+
 /**
  * 转换成小写十六进制字符串
  * @author YJL
  */
 val ByteArray.hex: String
-    get() = joinToString("") {
-        Integer.toHexString(it.toInt() and 0xff)
+    get() = joinToString("") { b ->
+        val v = b.toInt() and 0xff
+        "${CHARS[v.ushr(4)]}${CHARS[v and 0xf]}"
     }
 
 val ByteArray.md2: String
