@@ -9,10 +9,10 @@ plugins {
     alias(libs.plugins.kotlin)
 }
 
-val name="message-digest-kotlin"
+val NAME="message-digest-kotlin"
 
 group = "io.github.yin-jinlong"
-version = "0.1.0"
+version = "0.1.1"
 description = "Message Digest Utils for kotlin"
 
 Props.init(rootDir)
@@ -49,7 +49,7 @@ kotlin {
     }
 }
 
-val pushDir = rootDir.resolve(".m2/repository/io/github/yin-jinlong/$name/$version")
+val pushDir = rootDir.resolve(".m2/repository/io/github/yin-jinlong/$NAME/$version")
 
 tasks.withType<Test> {
     useJUnitPlatform()
@@ -82,7 +82,7 @@ publishing {
             pom {
                 name = artifactId
                 description = project.description
-                url = "https://github.com/Yin-Jinlong/$name"
+                url = "https://github.com/Yin-Jinlong/$NAME"
 
                 licenses {
                     license {
@@ -101,9 +101,9 @@ publishing {
                 }
 
                 scm {
-                    connection = "scm:git:git://github.com/Yin-Jinlong/$name.git"
-                    developerConnection = "scm:git:ssh://github.com/Yin-Jinlong/$name.git"
-                    url = "https://github.com/Yin-Jinlong/$name"
+                    connection = "scm:git:git://github.com/Yin-Jinlong/$NAME.git"
+                    developerConnection = "scm:git:ssh://github.com/Yin-Jinlong/$NAME.git"
+                    url = "https://github.com/Yin-Jinlong/$NAME"
                 }
 
             }

@@ -6,7 +6,7 @@ package io.github.yinjinlong.md
  */
 val ByteArray.hex: String
     get() = joinToString("") {
-        Integer.toHexString(it.toInt())
+        Integer.toHexString(it.toInt() and 0xff)
     }
 
 val ByteArray.md2: String
