@@ -12,7 +12,7 @@ plugins {
 val NAME="message-digest-kotlin"
 
 group = "io.github.yin-jinlong"
-version = "0.1.1"
+version = "0.1.3"
 description = "Message Digest Utils for kotlin"
 
 Props.init(rootDir)
